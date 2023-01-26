@@ -1,0 +1,407 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A667F943297F320800C25D8C /* MockingbirdApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A667F942297F320800C25D8C /* MockingbirdApp.swift */; };
+		A667F947297F320900C25D8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A667F946297F320900C25D8C /* Assets.xcassets */; };
+		A667F94B297F320900C25D8C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A667F94A297F320900C25D8C /* Preview Assets.xcassets */; };
+		A667F970297F37FA00C25D8C /* HomeTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = A667F96F297F37FA00C25D8C /* HomeTab.swift */; };
+		A667F972297F381500C25D8C /* FavoritesTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = A667F971297F381500C25D8C /* FavoritesTab.swift */; };
+		A690FEE529819F140020DDD7 /* MacAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A690FEE429819F140020DDD7 /* MacAppView.swift */; };
+		A690FEE729819F250020DDD7 /* PhoneAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A690FEE629819F250020DDD7 /* PhoneAppView.swift */; };
+		A690FEE929819F320020DDD7 /* PadAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A690FEE829819F320020DDD7 /* PadAppView.swift */; };
+		A690FEEB2981A04C0020DDD7 /* LayoutConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A690FEEA2981A04C0020DDD7 /* LayoutConfiguration.swift */; };
+		A690FEED2981B0710020DDD7 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = A690FEEC2981B0710020DDD7 /* Device.swift */; };
+		A6E7EAA129806420009D5E4B /* AppTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E7EAA029806420009D5E4B /* AppTabBar.swift */; };
+		A6E7EAA329808472009D5E4B /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E7EAA229808472009D5E4B /* Tab.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A667F93F297F320800C25D8C /* MockingbirdApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MockingbirdApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A667F942297F320800C25D8C /* MockingbirdApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockingbirdApp.swift; sourceTree = "<group>"; };
+		A667F946297F320900C25D8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A667F948297F320900C25D8C /* MockingbirdApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MockingbirdApp.entitlements; sourceTree = "<group>"; };
+		A667F94A297F320900C25D8C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A667F96F297F37FA00C25D8C /* HomeTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTab.swift; sourceTree = "<group>"; };
+		A667F971297F381500C25D8C /* FavoritesTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTab.swift; sourceTree = "<group>"; };
+		A690FEE429819F140020DDD7 /* MacAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacAppView.swift; sourceTree = "<group>"; };
+		A690FEE629819F250020DDD7 /* PhoneAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneAppView.swift; sourceTree = "<group>"; };
+		A690FEE829819F320020DDD7 /* PadAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PadAppView.swift; sourceTree = "<group>"; };
+		A690FEEA2981A04C0020DDD7 /* LayoutConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutConfiguration.swift; sourceTree = "<group>"; };
+		A690FEEC2981B0710020DDD7 /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		A6E7EAA029806420009D5E4B /* AppTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabBar.swift; sourceTree = "<group>"; };
+		A6E7EAA229808472009D5E4B /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A667F93C297F320800C25D8C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A667F936297F320800C25D8C = {
+			isa = PBXGroup;
+			children = (
+				A667F941297F320800C25D8C /* MockingbirdApp */,
+				A667F940297F320800C25D8C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A667F940297F320800C25D8C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A667F93F297F320800C25D8C /* MockingbirdApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A667F941297F320800C25D8C /* MockingbirdApp */ = {
+			isa = PBXGroup;
+			children = (
+				A667F96D297F356F00C25D8C /* App */,
+				A667F946297F320900C25D8C /* Assets.xcassets */,
+				A667F948297F320900C25D8C /* MockingbirdApp.entitlements */,
+				A667F949297F320900C25D8C /* Preview Content */,
+				A690FEEC2981B0710020DDD7 /* Device.swift */,
+			);
+			path = MockingbirdApp;
+			sourceTree = "<group>";
+		};
+		A667F949297F320900C25D8C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A667F94A297F320900C25D8C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A667F96D297F356F00C25D8C /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A6E7EAA029806420009D5E4B /* AppTabBar.swift */,
+				A690FEEA2981A04C0020DDD7 /* LayoutConfiguration.swift */,
+				A690FEE429819F140020DDD7 /* MacAppView.swift */,
+				A667F942297F320800C25D8C /* MockingbirdApp.swift */,
+				A690FEE829819F320020DDD7 /* PadAppView.swift */,
+				A690FEE629819F250020DDD7 /* PhoneAppView.swift */,
+				A667F96E297F37CB00C25D8C /* Tabs */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A667F96E297F37CB00C25D8C /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				A667F971297F381500C25D8C /* FavoritesTab.swift */,
+				A667F96F297F37FA00C25D8C /* HomeTab.swift */,
+				A6E7EAA229808472009D5E4B /* Tab.swift */,
+			);
+			path = Tabs;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A667F93E297F320800C25D8C /* MockingbirdApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A667F964297F320A00C25D8C /* Build configuration list for PBXNativeTarget "MockingbirdApp" */;
+			buildPhases = (
+				A667F93B297F320800C25D8C /* Sources */,
+				A667F93C297F320800C25D8C /* Frameworks */,
+				A667F93D297F320800C25D8C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MockingbirdApp;
+			productName = MockingbirdApp;
+			productReference = A667F93F297F320800C25D8C /* MockingbirdApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A667F937297F320800C25D8C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					A667F93E297F320800C25D8C = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = A667F93A297F320800C25D8C /* Build configuration list for PBXProject "MockingbirdApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A667F936297F320800C25D8C;
+			productRefGroup = A667F940297F320800C25D8C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A667F93E297F320800C25D8C /* MockingbirdApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A667F93D297F320800C25D8C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A667F94B297F320900C25D8C /* Preview Assets.xcassets in Resources */,
+				A667F947297F320900C25D8C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A667F93B297F320800C25D8C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A690FEED2981B0710020DDD7 /* Device.swift in Sources */,
+				A667F970297F37FA00C25D8C /* HomeTab.swift in Sources */,
+				A690FEEB2981A04C0020DDD7 /* LayoutConfiguration.swift in Sources */,
+				A667F943297F320800C25D8C /* MockingbirdApp.swift in Sources */,
+				A690FEE929819F320020DDD7 /* PadAppView.swift in Sources */,
+				A690FEE729819F250020DDD7 /* PhoneAppView.swift in Sources */,
+				A6E7EAA329808472009D5E4B /* Tab.swift in Sources */,
+				A667F972297F381500C25D8C /* FavoritesTab.swift in Sources */,
+				A690FEE529819F140020DDD7 /* MacAppView.swift in Sources */,
+				A6E7EAA129806420009D5E4B /* AppTabBar.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A667F962297F320A00C25D8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A667F963297F320A00C25D8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		A667F965297F320A00C25D8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MockingbirdApp/MockingbirdApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MockingbirdApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Mockingbird;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mikeyclarke.MockingbirdApp.MockingbirdApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A667F966297F320A00C25D8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MockingbirdApp/MockingbirdApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MockingbirdApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Mockingbird;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mikeyclarke.MockingbirdApp.MockingbirdApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A667F93A297F320800C25D8C /* Build configuration list for PBXProject "MockingbirdApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A667F962297F320A00C25D8C /* Debug */,
+				A667F963297F320A00C25D8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A667F964297F320A00C25D8C /* Build configuration list for PBXNativeTarget "MockingbirdApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A667F965297F320A00C25D8C /* Debug */,
+				A667F966297F320A00C25D8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A667F937297F320800C25D8C /* Project object */;
+}
