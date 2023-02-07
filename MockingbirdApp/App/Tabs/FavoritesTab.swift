@@ -4,7 +4,7 @@ struct FavoritesTab: View {
     var body: some View {
         NavigationStack {
             VStack(alignment: .center) {
-                Text("I Like You!")
+                Timeline()
             }
                 .navigationTitle("Favorites")
                 .frame(
@@ -12,11 +12,11 @@ struct FavoritesTab: View {
                     maxHeight: .infinity,
                     alignment: .center
                 )
+                #if !os(macOS)
+                .navigationBarTitleDisplayMode(.inline)
+                .navigationViewStyle(.stack)
+                #endif
         }
-            #if !os(macOS)
-            .navigationBarTitleDisplayMode(.inline)
-            .navigationViewStyle(.stack)
-            #endif
     }
 }
 

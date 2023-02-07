@@ -4,7 +4,7 @@ struct HomeTab: View {
     var body: some View {
         NavigationStack {
             VStack(alignment: .center) {
-                Text("Hello")
+                Timeline()
             }
                 .navigationTitle("Home")
                 .frame(
@@ -12,11 +12,11 @@ struct HomeTab: View {
                     maxHeight: .infinity,
                     alignment: .center
                 )
+                #if !os(macOS)
+                .navigationBarTitleDisplayMode(.inline)
+                .navigationViewStyle(.stack)
+                #endif
         }
-            #if !os(macOS)
-            .navigationBarTitleDisplayMode(.inline)
-            .navigationViewStyle(.stack)
-            #endif
     }
 }
 

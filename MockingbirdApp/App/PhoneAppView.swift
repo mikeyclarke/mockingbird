@@ -9,7 +9,7 @@ struct PhoneAppView<Content: View>: View {
             content()
             Divider()
             AppTabBar(tabs: Tab.allCases, selectedTab: $selectedTab)
-                .frame(width: .infinity)
+                .frame(maxWidth: .infinity)
                 .background(.thinMaterial)
         }
     }

@@ -1,0 +1,32 @@
+{
+  "pins" : [
+    {
+      "identity" : "nuke",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/kean/Nuke",
+      "state" : {
+        "revision" : "df6cfba3f49aa6777b8c1084cb7778899ca166d3",
+        "version" : "11.6.0"
+      }
+    },
+    {
+      "identity" : "ohhauth",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/mw99/OhhAuth.git",
+      "state" : {
+        "revision" : "67ffdff1f7da22bd84d13f1d9272541a1aeecf4c",
+        "version" : "1.2.0"
+      }
+    },
+    {
+      "identity" : "swinject",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Swinject/Swinject.git",
+      "state" : {
+        "revision" : "8bc503e60965298984fb58cf47b71c541449fe2a",
+        "version" : "2.8.3"
+      }
+    }
+  ],
+  "version" : 2
+}

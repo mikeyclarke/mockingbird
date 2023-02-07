@@ -1,12 +1,33 @@
 import SwiftUI
+import Swinject
 
 @main
 struct MockingbirdApp: App {
+    @State public var isAuthenticated: Bool = false
     @State private var selectedTab: Tab = .home
+
+    init() {
+        DependencyManager.boot()
+    }
 
     var body: some Scene {
         WindowGroup {
-            appView
+            Group {
+                if isAuthenticated {
+                    appView
+                } else {
+                    UnauthenticatedView(isAuthenticated: $isAuthenticated)
+                }
+            }
+                #if os(macOS)
+                .frame(
+                    minWidth: LayoutConfiguration.macosWindowInitialWidth,
+                    maxWidth: .infinity,
+                    minHeight: LayoutConfiguration.macosWindowInitialHeight,
+                    maxHeight: .infinity,
+                    alignment: .center
+                )
+                #endif
         }
             #if os(macOS)
             .windowStyle(.hiddenTitleBar)
