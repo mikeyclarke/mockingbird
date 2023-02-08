@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct UnauthenticatedView: View {
-    @Binding var isAuthenticated: Bool
+    @Binding var authenticatedUser: User?
 
     var body: some View {
         HStack {
@@ -20,7 +20,7 @@ struct UnauthenticatedView: View {
                                 userAuthenticatedTwitterClient: userAuthenticatedTwitterClient
                             )
 
-                            isAuthenticated = true
+                            authenticatedUser = User(from: userAuthenticatedTwitterClient.user)
                         }
                     },
                     label: {
@@ -34,6 +34,6 @@ struct UnauthenticatedView: View {
 
 struct UnauthenticatedView_Previews: PreviewProvider {
     static var previews: some View {
-        UnauthenticatedView(isAuthenticated: .constant(false))
+        UnauthenticatedView(authenticatedUser: .constant(nil))
     }
 }

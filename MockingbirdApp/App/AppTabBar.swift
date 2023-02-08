@@ -1,6 +1,7 @@
 import SwiftUI
 
 struct AppTabBar: View {
+    let authenticatedUser: User
     var tabs: [Tab]
     @Binding var selectedTab: Tab
 
@@ -38,8 +39,14 @@ struct AppTabBar: View {
     }
 
     private var tabList: some View {
-        ForEach(tabs) { tab in
-            createTab(tab)
+        Group {
+            Avatar(
+                url: authenticatedUser.avatarImageUrl,
+                diameter: CGFloat(36)
+            )
+            ForEach(tabs) { tab in
+                createTab(tab)
+            }
         }
     }
 
@@ -55,8 +62,17 @@ struct AppTabBar: View {
 }
 
 struct AppTabBar_Previews: PreviewProvider {
+    static var authenticatedUser: User {
+        User(
+            id: "abcd1234",
+            name: "Jack Sparrow",
+            username: "captainjack",
+            profileImageUrl: URL(string: "https://pbs.twimg.com/profile_images/1569656103528448000/d0BzVIPL_normal.jpg")!
+        )
+    }
     static var previews: some View {
         AppTabBar(
+            authenticatedUser: authenticatedUser,
             tabs: Tab.allCases,
             selectedTab: .constant(Tab.home)
         )

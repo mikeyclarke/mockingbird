@@ -3,7 +3,7 @@ import Swinject
 
 @main
 struct MockingbirdApp: App {
-    @State public var isAuthenticated: Bool = false
+    @State private var authenticatedUser: User? = nil
     @State private var selectedTab: Tab = .home
 
     init() {
@@ -13,10 +13,10 @@ struct MockingbirdApp: App {
     var body: some Scene {
         WindowGroup {
             Group {
-                if isAuthenticated {
+                if nil != authenticatedUser {
                     appView
                 } else {
-                    UnauthenticatedView(isAuthenticated: $isAuthenticated)
+                    UnauthenticatedView(authenticatedUser: $authenticatedUser)
                 }
             }
                 #if os(macOS)
@@ -39,24 +39,27 @@ struct MockingbirdApp: App {
     private var appView: some View {
         let tabContents = ForEach(Tab.allCases) { tab in
             if tab == selectedTab {
-                tab.makeContentView()
+                tab.makeContentView(authenticatedUser: authenticatedUser!)
             }
         }
 
         if Device.isMac() {
             MacAppView(
+                authenticatedUser: authenticatedUser!,
                 selectedTab: $selectedTab
             ) {
                 tabContents
             }
         } else if Device.isPad() {
             PadAppView(
+                authenticatedUser: authenticatedUser!,
                 selectedTab: $selectedTab
             ) {
                 tabContents
             }
         } else {
             PhoneAppView(
+                authenticatedUser: authenticatedUser!,
                 selectedTab: $selectedTab
             ) {
                 tabContents

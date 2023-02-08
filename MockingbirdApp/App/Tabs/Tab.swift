@@ -28,10 +28,10 @@ enum Tab: String, Identifiable, Hashable, CaseIterable {
     }
 
     @ViewBuilder
-    func makeContentView() -> some View {
+    func makeContentView(authenticatedUser: User) -> some View {
         switch self {
             case .home:
-                HomeTab()
+                HomeTab(authenticatedUser: authenticatedUser)
             case .favorites:
                 FavoritesTab()
         }
