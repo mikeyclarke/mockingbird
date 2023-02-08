@@ -22,6 +22,8 @@ struct Timeline: View {
 
 struct Timeline_Previews: PreviewProvider {
     static var previews: some View {
-        Timeline()
+        bootDependencyManager()
+        applyAuthenticatedAssemblies()
+        return Timeline()
     }
 }

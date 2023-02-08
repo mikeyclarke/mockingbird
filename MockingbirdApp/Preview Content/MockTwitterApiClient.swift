@@ -1,10 +1,9 @@
 import Foundation
 
-struct PreviewData {
-    var tweets: [Tweet] {
+final class MockTwitterApiClient: TwitterApiClient {
+    public func getV2ReverseChronologicalTimeline() async throws -> V2ResponseBody<[V2Tweet]> {
         let decoded: V2ResponseBody<[V2Tweet]> = loadAndDecode("v2_timeline_reverse_chronological.json")
-        let converter = V2TweetsResponseConverter()
-        return try! converter.convert(from: decoded)
+        return decoded
     }
 }
 

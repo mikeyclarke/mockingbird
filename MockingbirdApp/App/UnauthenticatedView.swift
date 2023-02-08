@@ -15,7 +15,7 @@ struct UnauthenticatedView: View {
                                 accessToken: try! Configuration.value(for: "TWITTER_ACCESS_TOKEN"),
                                 accessTokenSecret: try! Configuration.value(for: "TWITTER_ACCESS_TOKEN_SECRET")
                             )
-                            let userAuthenticatedTwitterClient = try! await TwitterApiClient.createUserAuthenticatedClient(with: credentials)
+                            let userAuthenticatedTwitterClient = try! await DefaultTwitterApiClient.createUserAuthenticatedClient(with: credentials)
                             DependencyManager.applyAuthenticatedAssemblies(
                                 userAuthenticatedTwitterClient: userAuthenticatedTwitterClient
                             )
