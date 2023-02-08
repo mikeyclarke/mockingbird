@@ -59,6 +59,7 @@
 		A6C8C31229940B1A005C245F /* MockTwitterApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8C31129940B1A005C245F /* MockTwitterApiClient.swift */; };
 		A6C8C31429940B70005C245F /* DefaultTwitterApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8C31329940B70005C245F /* DefaultTwitterApiClient.swift */; };
 		A6C8C31829940F22005C245F /* bootstrapPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8C31729940F22005C245F /* bootstrapPreview.swift */; };
+		A6D92F95299424FC00C6281C /* UrlPercentEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D92F94299424FC00C6281C /* UrlPercentEncoding.swift */; };
 		A6E7EAA129806420009D5E4B /* AppTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E7EAA029806420009D5E4B /* AppTabBar.swift */; };
 		A6E7EAA329808472009D5E4B /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E7EAA229808472009D5E4B /* Tab.swift */; };
 /* End PBXBuildFile section */
@@ -128,6 +129,7 @@
 		A6C8C31129940B1A005C245F /* MockTwitterApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTwitterApiClient.swift; sourceTree = "<group>"; };
 		A6C8C31329940B70005C245F /* DefaultTwitterApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultTwitterApiClient.swift; sourceTree = "<group>"; };
 		A6C8C31729940F22005C245F /* bootstrapPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bootstrapPreview.swift; sourceTree = "<group>"; };
+		A6D92F94299424FC00C6281C /* UrlPercentEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlPercentEncoding.swift; sourceTree = "<group>"; };
 		A6E7EAA029806420009D5E4B /* AppTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabBar.swift; sourceTree = "<group>"; };
 		A6E7EAA229808472009D5E4B /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -200,15 +202,16 @@
 		A667F936297F320800C25D8C = {
 			isa = PBXGroup;
 			children = (
-				A694D130299316B50022CAF6 /* Formatter */,
 				A66453BA298F001B001F99B4 /* Configuration */,
 				A6C487A1298DBD40006CE567 /* Converter */,
+				A694D130299316B50022CAF6 /* Formatter */,
 				A667F941297F320800C25D8C /* MockingbirdApp */,
 				A674446D2987206E00B16BF9 /* Model */,
 				A66453C3298F099C001F99B4 /* Network */,
+				A667F940297F320800C25D8C /* Products */,
 				A66453B1298EDDB5001F99B4 /* Repository */,
 				A674446C2987205A00B16BF9 /* TwitterApi */,
-				A667F940297F320800C25D8C /* Products */,
+				A6D92F93299424CF00C6281C /* Url */,
 			);
 			sourceTree = "<group>";
 		};
@@ -326,6 +329,14 @@
 			path = Converter;
 			sourceTree = "<group>";
 		};
+		A6D92F93299424CF00C6281C /* Url */ = {
+			isa = PBXGroup;
+			children = (
+				A6D92F94299424FC00C6281C /* UrlPercentEncoding.swift */,
+			);
+			path = Url;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -440,6 +451,7 @@
 				A674447729887A1A00B16BF9 /* Timeline.swift in Sources */,
 				A674445C2984525D00B16BF9 /* Media.swift in Sources */,
 				A61E8F68299198C4009F7715 /* TimelineViewModel.swift in Sources */,
+				A6D92F95299424FC00C6281C /* UrlPercentEncoding.swift in Sources */,
 				A6C8C310299400C2005C245F /* TimelineAssembly.swift in Sources */,
 				A6744479298981AC00B16BF9 /* V2ResponseBody.swift in Sources */,
 				A6744486298C281F00B16BF9 /* ApiResponseDecoderFactory.swift in Sources */,

@@ -35,7 +35,7 @@ struct V2Tweet: Codable, Identifiable {
         let start: Int
         let end: Int
         let url: URL
-        let expandedUrl: URL
+        @UrlPercentEncoding var expandedUrl: URL
         let displayUrl: String
         let title: String?
         let description: String?
