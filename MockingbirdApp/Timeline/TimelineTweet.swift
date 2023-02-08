@@ -1,8 +1,8 @@
 import SwiftUI
 
 struct TimelineTweet: View {
+    @StateObject private var viewModel = DependencyManager.assembler.resolver.resolve(TimelineTweetViewModel.self)!
 	let tweet: Tweet
-	let createdAtDisplay: String
 
     var body: some View {
         HStack(alignment: .top, spacing: LayoutConfiguration.timelineTweetAvatarBodyGap) {
@@ -25,8 +25,10 @@ struct TimelineTweet: View {
                                 .frame(width: 16, height: 16)
                                 .accessibilityLabel("Part of a thread")
                         }
-                        Text(createdAtDisplay)
-                            .font(.subheadline)
+                        TimelineView(.everyMinute) { _ in
+                            Text(viewModel.timeAgo(from: tweet.createdAt))
+                                .font(.subheadline)
+                        }
                         if tweet.isFavorited {
                             Image(systemName: "heart.fill")
                                 .resizable()
@@ -53,7 +55,7 @@ struct TimelineTweet: View {
                     }
 
                     if tweet.hasQuotedTweet {
-                        TimelineQuotedTweet(tweet: tweet.quotedTweet!, createdAtDisplay: "FIX")
+                        TimelineQuotedTweet(tweet: tweet.quotedTweet!)
                             .padding(.top, 15)
                     }
 
@@ -130,6 +132,8 @@ struct TimelineTweetRow_Previews: PreviewProvider {
         originalId: "789"
 	)
     static var previews: some View {
-        TimelineTweet(tweet: tweet, createdAtDisplay: "18m")
+        bootDependencyManager()
+        applyAuthenticatedAssemblies()
+        return TimelineTweet(tweet: tweet)
     }
 }

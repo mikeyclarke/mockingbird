@@ -1,8 +1,8 @@
 import SwiftUI
 
 struct TimelineQuotedTweet: View {
+    @StateObject private var viewModel = DependencyManager.assembler.resolver.resolve(TimelineQuotedTweetViewModel.self)!
 	let tweet: Tweet
-	let createdAtDisplay: String
 
     let maxTextLines = 5
 
@@ -16,7 +16,10 @@ struct TimelineQuotedTweet: View {
                         .lineLimit(1)
                         .truncationMode(.tail)
                     Spacer()
-                    Text(createdAtDisplay)
+                    TimelineView(.everyMinute) { _ in
+                        Text(viewModel.timeAgo(from: tweet.createdAt))
+                            .font(.subheadline)
+                    }
                 }
                     .padding(.bottom, LayoutConfiguration.timelineTweetHeaderPaddingBottom)
 
@@ -54,7 +57,9 @@ struct TimelineQuotedTweet_Previews: PreviewProvider {
 		text: "Q&A with Catherine Barnard, Professor of #European & Employment Law Cambridge, about the Retained EU Law Bill. Post your question as a reply #BrexitBritain"
 	)
     static var previews: some View {
-        TimelineQuotedTweet(tweet: tweet, createdAtDisplay: "18m")
+        bootDependencyManager()
+        applyAuthenticatedAssemblies()
+        return TimelineQuotedTweet(tweet: tweet)
             .frame(width: 254, height: 800)
     }
 }

@@ -8,7 +8,7 @@ struct Timeline: View {
         ScrollView {
             LazyVStack(spacing: 0) {
                 ForEach(tweets) { tweet in
-                    TimelineTweet(tweet: tweet, createdAtDisplay: viewModel.timeAgo(from: tweet.createdAt))
+                    TimelineTweet(tweet: tweet)
                 }
             }
         }

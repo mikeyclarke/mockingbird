@@ -10,8 +10,19 @@ final class TimelineAssembly: AuthenticatedAssembly, Assembly {
     public func assemble(container: Container) {
         container.register(TimelineViewModel.self) { r in
             TimelineViewModel(
-                timeAgoFormatter: r.resolve(TimeAgoFormatter.self)!,
                 tweetRepository: r.resolve(TweetRepository.self)!
+            )
+        }
+
+        container.register(TimelineTweetViewModel.self) { r in
+            TimelineTweetViewModel(
+                timeAgoFormatter: r.resolve(TimeAgoFormatter.self)!
+            )
+        }
+
+        container.register(TimelineQuotedTweetViewModel.self) { r in
+            TimelineQuotedTweetViewModel(
+                timeAgoFormatter: r.resolve(TimeAgoFormatter.self)!
             )
         }
     }
