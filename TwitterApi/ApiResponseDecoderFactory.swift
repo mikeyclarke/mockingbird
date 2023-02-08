@@ -6,10 +6,8 @@ class ApiResponseDecoderFactory {
 
         decoder.keyDecodingStrategy = .convertFromSnakeCase
 
-        let formatter = ISO8601DateFormatter()
-        formatter.formatOptions = [
-            .withFractionalSeconds
-        ]
+        let formatter = DateFormatter()
+        formatter.dateFormat = "y-MM-dd'T'H:mm:ss.SSSXXXXX"
 
         decoder.dateDecodingStrategy = .custom({ decoder in
             let container = try decoder.singleValueContainer()

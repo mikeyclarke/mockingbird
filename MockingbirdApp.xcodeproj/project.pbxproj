@@ -50,9 +50,13 @@
 		A690FEE929819F320020DDD7 /* PadAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A690FEE829819F320020DDD7 /* PadAppView.swift */; };
 		A690FEEB2981A04C0020DDD7 /* LayoutConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A690FEEA2981A04C0020DDD7 /* LayoutConfiguration.swift */; };
 		A690FEED2981B0710020DDD7 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = A690FEEC2981B0710020DDD7 /* Device.swift */; };
+		A694D132299317190022CAF6 /* TimeAgoFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A694D131299317190022CAF6 /* TimeAgoFormatter.swift */; };
 		A69530072992E9A2009C5C9B /* UnauthenticatedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69530062992E9A2009C5C9B /* UnauthenticatedView.swift */; };
 		A69530092992EA01009C5C9B /* DependencyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69530082992EA01009C5C9B /* DependencyManager.swift */; };
-		A695300B2992EEAB009C5C9B /* AuthenticatedAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A695300A2992EEAB009C5C9B /* AuthenticatedAssembler.swift */; };
+		A6C8C30A2993FEEC005C245F /* FormatterAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8C3092993FEEC005C245F /* FormatterAssembly.swift */; };
+		A6C8C30C2993FFAD005C245F /* ConverterAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8C30B2993FFAD005C245F /* ConverterAssembly.swift */; };
+		A6C8C30E2994002D005C245F /* RepositoryAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8C30D2994002D005C245F /* RepositoryAssembly.swift */; };
+		A6C8C310299400C2005C245F /* TimelineAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8C30F299400C2005C245F /* TimelineAssembly.swift */; };
 		A6E7EAA129806420009D5E4B /* AppTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E7EAA029806420009D5E4B /* AppTabBar.swift */; };
 		A6E7EAA329808472009D5E4B /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E7EAA229808472009D5E4B /* Tab.swift */; };
 /* End PBXBuildFile section */
@@ -113,9 +117,13 @@
 		A690FEE829819F320020DDD7 /* PadAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PadAppView.swift; sourceTree = "<group>"; };
 		A690FEEA2981A04C0020DDD7 /* LayoutConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutConfiguration.swift; sourceTree = "<group>"; };
 		A690FEEC2981B0710020DDD7 /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		A694D131299317190022CAF6 /* TimeAgoFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeAgoFormatter.swift; sourceTree = "<group>"; };
 		A69530062992E9A2009C5C9B /* UnauthenticatedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnauthenticatedView.swift; sourceTree = "<group>"; };
 		A69530082992EA01009C5C9B /* DependencyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyManager.swift; sourceTree = "<group>"; };
-		A695300A2992EEAB009C5C9B /* AuthenticatedAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticatedAssembler.swift; sourceTree = "<group>"; };
+		A6C8C3092993FEEC005C245F /* FormatterAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatterAssembly.swift; sourceTree = "<group>"; };
+		A6C8C30B2993FFAD005C245F /* ConverterAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverterAssembly.swift; sourceTree = "<group>"; };
+		A6C8C30D2994002D005C245F /* RepositoryAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryAssembly.swift; sourceTree = "<group>"; };
+		A6C8C30F299400C2005C245F /* TimelineAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineAssembly.swift; sourceTree = "<group>"; };
 		A6E7EAA029806420009D5E4B /* AppTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabBar.swift; sourceTree = "<group>"; };
 		A6E7EAA229808472009D5E4B /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -139,11 +147,12 @@
 		A65B3F202983264D00F39109 /* Timeline */ = {
 			isa = PBXGroup;
 			children = (
-				A65B3F2B29833B9600F39109 /* TimelineAvatar.swift */,
-				A65B3F212983271D00F39109 /* TimelineQuotedTweet.swift */,
-				A65B3F2D298345F900F39109 /* TimelineMedia.swift */,
-				A65B3F2629833AEE00F39109 /* TimelineTweet.swift */,
 				A674447629887A1A00B16BF9 /* Timeline.swift */,
+				A6C8C30F299400C2005C245F /* TimelineAssembly.swift */,
+				A65B3F2B29833B9600F39109 /* TimelineAvatar.swift */,
+				A65B3F2D298345F900F39109 /* TimelineMedia.swift */,
+				A65B3F212983271D00F39109 /* TimelineQuotedTweet.swift */,
+				A65B3F2629833AEE00F39109 /* TimelineTweet.swift */,
 				A61E8F67299198C4009F7715 /* TimelineViewModel.swift */,
 			);
 			path = Timeline;
@@ -160,6 +169,7 @@
 		A66453B1298EDDB5001F99B4 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
+				A6C8C30D2994002D005C245F /* RepositoryAssembly.swift */,
 				A66453B6298EDE61001F99B4 /* RepositoryCollection.swift */,
 				A66453B2298EDDD4001F99B4 /* TweetRepository.swift */,
 			);
@@ -170,7 +180,6 @@
 			isa = PBXGroup;
 			children = (
 				A66453BC298F005E001F99B4 /* App.xcconfig */,
-				A695300A2992EEAB009C5C9B /* AuthenticatedAssembler.swift */,
 				A66453BD298F027F001F99B4 /* Configuration.swift */,
 			);
 			path = Configuration;
@@ -187,6 +196,7 @@
 		A667F936297F320800C25D8C = {
 			isa = PBXGroup;
 			children = (
+				A694D130299316B50022CAF6 /* Formatter */,
 				A66453BA298F001B001F99B4 /* Configuration */,
 				A6C487A1298DBD40006CE567 /* Converter */,
 				A667F941297F320800C25D8C /* MockingbirdApp */,
@@ -291,11 +301,21 @@
 			path = ResponseModel;
 			sourceTree = "<group>";
 		};
+		A694D130299316B50022CAF6 /* Formatter */ = {
+			isa = PBXGroup;
+			children = (
+				A6C8C3092993FEEC005C245F /* FormatterAssembly.swift */,
+				A694D131299317190022CAF6 /* TimeAgoFormatter.swift */,
+			);
+			path = Formatter;
+			sourceTree = "<group>";
+		};
 		A6C487A1298DBD40006CE567 /* Converter */ = {
 			isa = PBXGroup;
 			children = (
-				A674446F298720EF00B16BF9 /* V2TweetsResponseConverter.swift */,
 				A66453AF298DC1EE001F99B4 /* ApiConverterError.swift */,
+				A6C8C30B2993FFAD005C245F /* ConverterAssembly.swift */,
+				A674446F298720EF00B16BF9 /* V2TweetsResponseConverter.swift */,
 			);
 			path = Converter;
 			sourceTree = "<group>";
@@ -389,6 +409,7 @@
 				A667F970297F37FA00C25D8C /* HomeTab.swift in Sources */,
 				A66453B9298EE904001F99B4 /* Credentials.swift in Sources */,
 				A690FEEB2981A04C0020DDD7 /* LayoutConfiguration.swift in Sources */,
+				A6C8C30E2994002D005C245F /* RepositoryAssembly.swift in Sources */,
 				A65B3F2E298345F900F39109 /* TimelineMedia.swift in Sources */,
 				A667F943297F320800C25D8C /* MockingbirdApp.swift in Sources */,
 				A690FEE929819F320020DDD7 /* PadAppView.swift in Sources */,
@@ -400,6 +421,7 @@
 				A690FEE729819F250020DDD7 /* PhoneAppView.swift in Sources */,
 				A6E7EAA329808472009D5E4B /* Tab.swift in Sources */,
 				A66453B0298DC1EE001F99B4 /* ApiConverterError.swift in Sources */,
+				A6C8C30A2993FEEC005C245F /* FormatterAssembly.swift in Sources */,
 				A65B3F2C29833B9600F39109 /* TimelineAvatar.swift in Sources */,
 				A65B3F2A29833B7200F39109 /* Avatar.swift in Sources */,
 				A667F972297F381500C25D8C /* FavoritesTab.swift in Sources */,
@@ -410,15 +432,17 @@
 				A674447729887A1A00B16BF9 /* Timeline.swift in Sources */,
 				A674445C2984525D00B16BF9 /* Media.swift in Sources */,
 				A61E8F68299198C4009F7715 /* TimelineViewModel.swift in Sources */,
+				A6C8C310299400C2005C245F /* TimelineAssembly.swift in Sources */,
 				A6744479298981AC00B16BF9 /* V2ResponseBody.swift in Sources */,
 				A6744486298C281F00B16BF9 /* ApiResponseDecoderFactory.swift in Sources */,
 				A6E7EAA129806420009D5E4B /* AppTabBar.swift in Sources */,
 				A6744484298B048700B16BF9 /* V2ReferencedTweet.swift in Sources */,
 				A6744488298C318900B16BF9 /* PreviewData.swift in Sources */,
-				A695300B2992EEAB009C5C9B /* AuthenticatedAssembler.swift in Sources */,
 				A65B3F222983271D00F39109 /* TimelineQuotedTweet.swift in Sources */,
+				A6C8C30C2993FFAD005C245F /* ConverterAssembly.swift in Sources */,
 				A6744482298AF2E500B16BF9 /* V2Media.swift in Sources */,
 				A66453B5298EDE17001F99B4 /* TwitterApiClient.swift in Sources */,
+				A694D132299317190022CAF6 /* TimeAgoFormatter.swift in Sources */,
 				A65B3F32298346CF00F39109 /* Tweet.swift in Sources */,
 				A6744470298720EF00B16BF9 /* V2TweetsResponseConverter.swift in Sources */,
 				A69530092992EA01009C5C9B /* DependencyManager.swift in Sources */,
